@@ -66,8 +66,8 @@ class ProductPage(BasePage):
         except:
             print("Không lấy được giá trị chiết khấu.")
         time.sleep(3)
-        #??????
-        original_price1 = "".join(original_price.text[0:10].split("."))
+        # Phần check này em về tìm hiểu thêm và sẽ bổ sung sau ạ.
+        '''original_price1 = "".join(original_price.text[0:10].split("."))
         print(int(original_price1))
         real_price1 = "".join(real_price.text[0:10].split("."))
         print(int(real_price1))
@@ -76,7 +76,7 @@ class ProductPage(BasePage):
         if (int(real_price1) / int(original_price1) + int(discount_rate1 / 100)) == 1:
             print("True")
         else:
-            print("False")
+            print("False")'''
 
     def click_on_shopping_button(self):
         try:
