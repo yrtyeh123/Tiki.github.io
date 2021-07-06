@@ -6,8 +6,8 @@ TikiApp
 Unity
 -----
 
-* [init](Unity/__init__.py) 
-* [locator](Unity/locator.py)
+* BasePage: [init](Unity/__init__.py) 
+* LocatorPage: [locator](Unity/locator.py)
 
 TikiPage
 --------
