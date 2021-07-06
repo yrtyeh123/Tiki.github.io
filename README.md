@@ -3,18 +3,16 @@ TikiApp
 
 .. About::
 
-Unity
------
+- Unity
 
-- BasePage: [init](Unity/__init__.py) 
-- LocatorPage: [locator](Unity/locator.py)
+  - BasePage: [init](Unity/__init__.py) 
+  - LocatorPage: [locator](Unity/locator.py)
 
-TikiPage
---------
+- TikiPage
 
-- [TikiHomePage](TikiPage/TikiHomePage.py)
-- [TikiProductPage](TikiPage/TikiProductPage.py)
-- [TikiCartPage](TikiPage/TikiCartPage.py)
+  - [TikiHomePage](TikiPage/TikiHomePage.py)
+  - [TikiProductPage](TikiPage/TikiProductPage.py)
+  - [TikiCartPage](TikiPage/TikiCartPage.py)
 
 TikiTest
 --------
