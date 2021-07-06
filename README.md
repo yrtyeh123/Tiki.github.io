@@ -1,8 +1,6 @@
 TikiApp
 =======
 
-.. contents::
-
 Unity
 -----
 
@@ -19,11 +17,3 @@ TikiPage
 TikiTest
 --------
 
-On Unix, Linux, BSD, macOS, and Cygwin::
-
-    ./configure
-    make
-    make test
-    sudo make install
-
-This will install Python as ``python3``.
