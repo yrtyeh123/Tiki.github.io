@@ -5,7 +5,7 @@
 * locator
 
 ## TikiPage
-* TikiHomePage
+* [TikiHomePage](TikiPage/TikiHomePage.py)
 * TikiProductPage
 * TikiCartPage
 
