@@ -6,7 +6,7 @@
 
 ## TikiPage
 * [TikiHomePage](TikiPage/TikiHomePage.py)
-* TikiProductPage
-* TikiCartPage
+* [TikiProductPage](TikiPage/TikiProductPage.py)
+* [TikiCartPage](TikiPage/TikiCartPage.py)
 
 ## TikiTest
