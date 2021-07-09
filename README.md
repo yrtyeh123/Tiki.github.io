@@ -59,15 +59,14 @@
 ## III. TikiCartPage
 
 
-<a name= "#information_bar"></a>
+<a name= "information_bar"></a>
 ### 3.1 Click the account information bar:
 
-<a name= "#shopping_cart"></a>
+<a name= "shopping_cart"></a>
 ### 3.2 Click shopping_cart.
 
-<a name= "#checkbox_fake"></a>
+<a name= "checkbox_fake"></a>
 ### 3.3 Click checkbox_fake.
 
-<a name= "#buying_button"></a>
+<a name= "buying_button"></a>
 ### 3.4 Click buying_button.
-
