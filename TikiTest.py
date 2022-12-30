@@ -3,19 +3,21 @@ from TikiPage import TikiHomePage
 from TikiPage import TikiProductPage
 from TikiPage import TikiCartPage
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 class TikiTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path='../chromessssss/chromedriver.exe')
+        # self.driver = webdriver.Chrome(executable_path='../chromessssss/chromedriver.exe')
+        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         self.driver.maximize_window()
         self.driver.get("https://tiki.vn/")
 
     def test_Tiki(self):
         # Vào trang chủ Tiki, nhấn nút quả qua quảng cáo và tra cứu sản phẩm.
         home_page = TikiHomePage.HomePage(self.driver)
-        home_page.is_advertise_appear()
         home_page.search_information()
         # Vào trang sản phẩm, chọn mức giá, chọn sản phẩm đầu tiên hiện ra và chọn vào giỏ hàng.
         product_page = TikiProductPage.ProductPage(self.driver)

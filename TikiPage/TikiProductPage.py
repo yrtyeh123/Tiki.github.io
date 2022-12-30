@@ -1,7 +1,7 @@
 import time
 
-from tikiApp.Unity import BasePage
-from tikiApp.Unity.locator import  ProductLocator
+from Unity import BasePage
+from Unity.locator import ProductLocator
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait

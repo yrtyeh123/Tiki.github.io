@@ -1,7 +1,7 @@
 import time
 
-from tikiApp.Unity.locator import CartPageLocator
-from tikiApp.Unity import BasePage
+from Unity.locator import CartPageLocator
+from Unity import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -13,7 +13,7 @@ class CartPage(BasePage):
             account_phone_taskbar = WebDriverWait(self.driver, 60).until(
                 EC.element_to_be_clickable((By.XPATH, CartPageLocator.account_information_taskbar))
             )
-            account_phone_taskbar.send_keys("0837556473")
+            account_phone_taskbar.send_keys("your_phone_number")
             print("Nhập thành công số điện thoại")
         except:
             print("Số điện thoại không hợp lệ hoặc không tìm thấy thanh nhập.")
@@ -31,7 +31,7 @@ class CartPage(BasePage):
             account_password_taskbar = WebDriverWait(self.driver, 60).until(
                 EC.element_to_be_clickable((By.XPATH, CartPageLocator.account_information_taskbar))
             )
-            account_password_taskbar.send_keys("Dino2001d")
+            account_password_taskbar.send_keys("your_password")
             print("Nhập thành công mật khẩu.")
         except:
             print("Mật khẩu không hợp lệ hoặc không tìm thấy thanh nhập.")
