@@ -11,9 +11,9 @@ class CartPage(BasePage):
     def log_in_account(self):
         try:
             account_phone_taskbar = WebDriverWait(self.driver, 60).until(
-                EC.element_to_be_clickable((By.XPATH, CartPageLocator.account_information_taskbar))
+                EC.element_to_be_clickable((By.XPATH, CartPageLocator.account_phone_taskbar))
             )
-            account_phone_taskbar.send_keys("your_phone_number")
+            account_phone_taskbar.send_keys("Nhap so dien thoai hoac ten dang nhap cua ban")
             print("Nhập thành công số điện thoại")
         except:
             print("Số điện thoại không hợp lệ hoặc không tìm thấy thanh nhập.")
@@ -29,9 +29,9 @@ class CartPage(BasePage):
         time.sleep(5)
         try:
             account_password_taskbar = WebDriverWait(self.driver, 60).until(
-                EC.element_to_be_clickable((By.XPATH, CartPageLocator.account_information_taskbar))
+                EC.element_to_be_clickable((By.XPATH, CartPageLocator.account_pass_taskbar))
             )
-            account_password_taskbar.send_keys("your_password")
+            account_password_taskbar.send_keys("Nhap mat khau tai khoan cua ban")
             print("Nhập thành công mật khẩu.")
         except:
             print("Mật khẩu không hợp lệ hoặc không tìm thấy thanh nhập.")

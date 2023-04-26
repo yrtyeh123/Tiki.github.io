@@ -14,8 +14,8 @@ class HomePage(BasePage):
             search_taskbar = WebDriverWait(self.driver, 60).until(
                 EC.element_to_be_clickable((By.XPATH, HomepageLocator.search_taskbar))
             )
-            search_taskbar.send_keys("ngo ngot")
-            print("Hiển thi thanh ngang tìm kiếm và tra cứu về từ khoá ///ngo ngot///.")
+            search_taskbar.send_keys("laptop")
+            print("Hiển thi thanh ngang tìm kiếm và tra cứu về từ khoá ///laptop///.")
         except:
             print("Không hiển thị thanh ngang tìm kiếm hoặc không nhập được từ khoá tra cứu.")
         time.sleep(10)

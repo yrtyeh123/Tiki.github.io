@@ -15,25 +15,24 @@ class HomepageLocator(object):
 class ProductLocator(object):
     # Chọn khoảng giá mua.
     number_price = random.randint(1, 4)
-    choose_price = '//*[@id="__next"]/div[1]/main/div[2]/div[1]/div[1]/div[5]/div[1]/div[' + str(
-        number_price) + ']/span'
+    choose_price = '//*[@class="fast-price-filter"]/div[' + str(number_price) + ']/span'
 
     # CHọn hãng sản xuất.
-    number_trademark = random.randint(1, 5)
-    choose_trademark = '//*[@id="__next"]/div[1]/main/div[2]/div/div[1]/div[5]/div/label[' + str(
-        number_trademark) + ']/label/span/img[2]'
+    number_trademark = random.randint(1, 14)
+    print(number_trademark)
+    choose_trademark = '//*[@data-view-label = "Thương hiệu"]/div/label[' + str(number_trademark) + ']//img[2]'
 
     # Chọn sản phẩm đầu tiên hiện ra.
-    first_product = '//*[@id="__next"]/div[1]/main/div[2]/div[1]/div[2]/div/div[2]/div[1]/a/span/div/div[1]/div[1]/picture/img'
+    first_product = '//a [@class= "product-item" and @data-view-index="0"]'
 
     # Giá thực tế.
-    #real_price = '//*[@id="__next"]/div[1]/main/div[4]/div/div[3]/div[2]/div/div[1]/div[1]/div[1]/div/span[1]'
+    # real_price = '//*[@id="__next"]/div[1]/main/div[4]/div/div[3]/div[2]/div/div[1]/div[1]/div[1]/div/span[1]'
 
     # Giá ban đầu.
-    #original_price = '//*[@id="__next"]/div[1]/main/div[4]/div/div[3]/div[2]/div/div[1]/div[1]/div[1]/div/span[2]'
+    # original_price = '//*[@id="__next"]/div[1]/main/div[4]/div/div[3]/div[2]/div/div[1]/div[1]/div[1]/div/span[2]'
 
     # Phần trăm chiết khấu.
-    #discount_rate = '//*[@id="__next"]/div[1]/main/div[4]/div/div[3]/div[2]/div/div[1]/div[1]/div[1]/div/span[3]'
+    # discount_rate = '//*[@id="__next"]/div[1]/main/div[4]/div/div[3]/div[2]/div/div[1]/div[1]/div[1]/div/span[3]'
 
     # Nút chọn hàng.
     shopping_button = '//*[@class="btn btn-add-to-cart"]'
@@ -41,13 +40,15 @@ class ProductLocator(object):
 
 class CartPageLocator(object):
     # Thanh nhập thông tin tài khoản.
-    account_information_taskbar = '/html/body/div[10]/div/div/div/div[1]/div/form/div/input'
+    # account_information_taskbar = '//*[@class = "input "]'
+    account_phone_taskbar = '//input [@type = "tel"]'
+    account_pass_taskbar = '//input [@type = "password"]'
 
     # Nút "Tiếp tục".
-    jog_on_button = '/html/body/div[10]/div/div/div/div[1]/div/form/button'
+    jog_on_button = '//*[@class = "styles__StyledLoginWithPhone-sc-si1ros-0 jdahxv"]/form/button'
 
     # Nút hoàn tất đăng nhập.
-    completed_button = '/html/body/div[10]/div/div/div/div[1]/div/form/button'
+    completed_button = '//*[@class = "styles__StyledLoginWithPass-sc-1p7u8we-0 AFbbS"]/form/button'
 
     # Nút nhảy vào giỏ hàng.
     shopping_cart = '//*[@class="btn-view-cart"]'
